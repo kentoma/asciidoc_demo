@@ -1,0 +1,33 @@
+:sectnums:
+
+= Asciidocデモ用リポジトリ
+
+=== 概要
+AsciiDocのデモ用のリポジトリです。
+
+=== 利用方法
+
+==== VSCode上のみで確認したい場合
+VSCode,および拡張機能のAsciiDocをインストールすれば利用可能です。
+
+==== build.shを使ってHTMLを生成したい場合
+
+*Macの場合*
+
+[NOTE]
+Rubyを利用します。MacではデフォルトでRubyがインストールされていますが、プレインストールのRubyを汚したくない場合は別途rbenv等を利用してインストールしてください。
+
+1. Asciidocをインストールします。
++
+```
+gem install asciidoctor
+gem install asciidoctor-pdf --pre
+gem install concurrent-ruby
+gem install asciidoctor-pdf-cjk-kai_gen_gothic
+```
+
+1. フォントをダウンロードします。
++
+```
+asciidoctor-pdf-cjk-kai_gen_gothic-install
+```

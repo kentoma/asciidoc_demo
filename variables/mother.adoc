@@ -1,0 +1,2 @@
+:japaneseName: お母さん
+:hangerColor: 白

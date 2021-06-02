@@ -1,0 +1,29 @@
+// 設定を行うsetting.adoc読み込み
+:sectnums:
+
+// 変数定義
+:clothName: ワイシャツ
+:person: kids
+
+// {person}用の変数ファイル読み込み
+include::variables/{person}.adoc[]
+
+= {japaneseName}の{clothName}を洗濯する手順
+
+// ネットに洗濯物を入れる手順（父の場合はネット不使用）
+ifeval::["{person}" == "mother"]
+include::components/putInNet.adoc[leveloffset=+1]
+endif::[]
+
+ifeval::["{person}" == "kids"]
+include::components/putInNet.adoc[leveloffset=+1]
+endif::[]
+
+// 洗濯物を洗濯機に入れる手順
+include::components/putInMachine.adoc[leveloffset=+1]
+
+// 洗濯機を回す手順
+include::components/run.adoc[leveloffset=+1]
+
+// 物を干す手順
+include::components/hang.adoc[leveloffset=+1]

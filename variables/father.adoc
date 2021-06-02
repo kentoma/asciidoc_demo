@@ -1,0 +1,2 @@
+:japaneseName: お父さん
+:hangerColor: 黒

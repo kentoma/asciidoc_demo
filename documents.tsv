@@ -1,0 +1,3 @@
+fatherPolo	.	 laundry.adoc	 -a person=father -a clothName=ポロシャツ
+motherTshirt	.	 laundry.adoc	 -a person=mother -a clothName=Tシャツ
+kidsSox	.	 laundry.adoc	 -a person=kids -a clothName=くつ下

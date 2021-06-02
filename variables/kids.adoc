@@ -1,0 +1,2 @@
+:japaneseName: こども
+:hangerColor: 赤
